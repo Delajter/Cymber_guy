@@ -117,6 +117,8 @@ while run:
     ball.ball.y+=ball.vel_y
     #round end
     if ball.ball.colliderect(b1.border):
+        pg.mixer.music.load('sound/gool.mp3')
+        pg.mixer.music.play(0)
         ptk_2+=1
         p1.player.x=screen_x / 4 + (screen_x / 4) * 2 * 0 -p1.player_size/2
         p1.player.y= screen_y / 2 - p1.player_size / 2
@@ -129,6 +131,8 @@ while run:
         ball.vel_x=0
         ball.vel_y=0
     if ball.ball.colliderect(b2.border):
+        pg.mixer.music.load('sound/gool.mp3')
+        pg.mixer.music.play(0)
         ptk_1+=1
         p1.player.x=screen_x / 4 + (screen_x / 4) * 2 * 0 -p1.player_size/2
         p1.player.y= screen_y / 2 - p1.player_size / 2
